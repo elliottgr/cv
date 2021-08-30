@@ -4,24 +4,34 @@
 \usepackage{enumitem}
 
 
-
+\setlist[itemize,1]{label=, leftmargin=0ex, itemindent=0ex, itemsep=0.0ex, parsep=0.5ex}
 \newlist{compactlist}{itemize}{1}
-\setlist[compactlist]{ label=, leftmargin=2ex, itemindent=-2ex, itemsep=0.0ex, parsep=0.5ex }
+\setlist[compactlist]{ label=, leftmargin=1ex, itemindent=1ex, itemsep=0.0ex, parsep=0.5ex }
 
 \begin{document}
     \begin{center}
-        \begin{minipage}{2.00in}\centering
-            Elliott Greene
-        \end{minipage}
+        % \begin{minipage}{2.00in}\centering
+        %     Elliott Greene
+        % \end{minipage}
         \begin{minipage}{2.00in} \centering
-        Department of Biology \\
-        University of Kentucky \\
-        Lexington, KY 40506
+            Elliott Greene\\
+            PhD Student\\
+            Department of Biology \\
+            University of Kentucky \\
+            Lexington, KY 40506
         \end{minipage}
     \end{center}
 
-    \section{Teaching}
-        \begin{compactlist}
-        \item Bio 155
-        \end{compactlist}
+    \section{Teaching Assistantships}
+    \begin{itemize}
+        \item University of Kentucky
+            \begin{itemize}
+            \item Fall 2021. BIO 303 Introduction to Evolution
+            \item Fall 2020, Spring 2021. BIO 155 Lab for Intro Biology
+            \end{itemize}
+        \item University of Alabama at Birmingham
+            \begin{itemize}
+            \item Summer 2019. BIO 271L Biology of Microorganisms Laboratory
+            \end{itemize}
+    \end{itemize}
 \end{document}
