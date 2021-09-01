@@ -5,7 +5,9 @@
 \usepackage{titlesec}
 \usepackage[margin=1.0in]{geometry}
 \usepackage{hyperref}
-% \renewcommand{\labelitemii}{$$}
+\usepackage{fancyhdr}
+\usepackage[ddmmyyyy]{datetime}
+
 
 % setting lists
 \setlist[itemize,1]{label=, leftmargin=0ex, itemindent=0ex, itemsep=0.0ex, parsep=0.5ex}
@@ -14,6 +16,12 @@
 \setlist[itemize]{leftmargin=.35in}
 \setlist{nolistsep}
 \titlespacing{\section}{0in}{\parskip}{-\parskip}
+
+\fancypagestyle{plain}{
+    \fancyhf{} % clear header/footer
+    \fancyfoot[R]{modified \today}% setting footer/modification note
+}
+
 
 
 \begin{document}
@@ -52,8 +60,8 @@
                 \end{itemize}
             \item Posters
                 \begin{itemize}
-                    \item November 2019, “Using low-cost sensors to refine off-line specific gravity measurements”, Master Brewers Conference, Calgary, CA
-                    \item April 2018, “Brewery accessible long-term evolution protocol to raise ethanol tolerance of brewer’s yeast”, Alabama Academy of Science Annual Meeting \#95, Birmingham, AL, USA
+                    \item November 2019, “{\it Using low-cost sensors to refine off-line specific gravity measurements}”, Master Brewers Conference, Calgary, CA
+                    \item April 2018, “{\it Brewery accessible long-term evolution protocol to raise ethanol tolerance of brewer’s yeast}”, Alabama Academy of Science Annual Meeting \#95, Birmingham, AL, USA
                 \end{itemize}
         \end{itemize}
 
