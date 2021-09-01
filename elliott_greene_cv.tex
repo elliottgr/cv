@@ -1,37 +1,86 @@
 \documentclass[11pt]{article}
 
-
+% Trying to keep all packages here
 \usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{hyperref}
+% \renewcommand{\labelitemii}{$$}
 
-
+% setting lists
 \setlist[itemize,1]{label=, leftmargin=0ex, itemindent=0ex, itemsep=0.0ex, parsep=0.5ex}
 \newlist{compactlist}{itemize}{1}
 \setlist[compactlist]{ label=, leftmargin=1ex, itemindent=1ex, itemsep=0.0ex, parsep=0.5ex }
+\setlist[itemize]{leftmargin=.35in}
+\setlist{nolistsep}
+\titlespacing{\section}{0in}{\parskip}{-\parskip}
+
 
 \begin{document}
-    \begin{center}
-        % \begin{minipage}{2.00in}\centering
-        %     Elliott Greene
-        % \end{minipage}
-        \begin{minipage}{2.00in} \centering
-            Elliott Greene\\
-            PhD Student\\
-            Department of Biology \\
-            University of Kentucky \\
-            Lexington, KY 40506
-        \end{minipage}
-    \end{center}
+\thispagestyle{plain}
+\begin{minipage}[t]{1.00in}    \centering
+    Elliott Greene \\
+    Ph.D. Student \\
+    {\href{mailto:e.g@uky.edu}{e.g@uky.edu}}
 
-    \section{Teaching Assistantships}
-    \begin{itemize}
-        \item University of Kentucky
-            \begin{itemize}
-            \item Fall 2021. BIO 303 Introduction to Evolution
-            \item Fall 2020, Spring 2021. BIO 155 Lab for Intro Biology
-            \end{itemize}
-        \item University of Alabama at Birmingham
-            \begin{itemize}
-            \item Summer 2019. BIO 271L Biology of Microorganisms Laboratory
-            \end{itemize}
-    \end{itemize}
+\end{minipage}
+    \begin{minipage}[t]{3.0in} \centering
+        Department of Biology \\
+        University of Kentucky \\
+        Lexington, KY 40506
+    \end{minipage}
+
+
+    \section*{Education}
+        % \begin{tabular}{ l c c }
+        \begin{tabular}{@{}p{1.0in}@{}p{2.0in}@{}p{3in}r}
+            2020-- & \textbf{Ph.D.} & University of Kentucky \\
+            & Lexington, KY & Advisor: Jeremy Van Cleve \\
+            2018 & \textbf{B.S.} & University of Alabama at Birmingham\\
+            & Birmingham, AL  & Major: Biology
+        \end{tabular}
+
+
+        
+    \section*{Publications}
+
+    \section*{Presentations}
+        \begin{itemize}[leftmargin=.25in]
+            \item Talks
+                \begin{itemize}
+                    \item March 2019, Lecture 9.1, BioHack Academy \#6, Waag Academy, Amsterdam, NL (remote)
+                \end{itemize}
+            \item Posters
+                \begin{itemize}
+                    \item November 2019, “Using low-cost sensors to refine off-line specific gravity measurements”, Master Brewers Conference, Calgary, CA
+                    \item April 2018, “Brewery accessible long-term evolution protocol to raise ethanol tolerance of brewer’s yeast”, Alabama Academy of Science Annual Meeting \#95, Birmingham, AL, USA
+                \end{itemize}
+        \end{itemize}
+
+
+    \section*{Awards}
+
+
+    \section*{Teaching Assistantships}
+        \begin{itemize}[leftmargin=.25in]
+            \item University of Kentucky
+                \begin{itemize}
+                \item Fall 2021. BIO 303 Introduction to Evolution
+                \item Fall 2020, Spring 2021. BIO 155 Lab for Intro Biology
+                \end{itemize}
+            \item University of Alabama at Birmingham
+                \begin{itemize}
+                \item Summer 2019. BIO 271L Biology of Microorganisms Laboratory
+                \end{itemize}
+        \end{itemize}
+
+
+    \section*{Outreach}
+        \begin{itemize}[leftmargin=.25in]
+            \item University of Kentucky
+                \begin{itemize}
+                    \item 2021, Recruitment Sub-committee. 
+                \end{itemize}
+        
+        \end{itemize} 
 \end{document}
