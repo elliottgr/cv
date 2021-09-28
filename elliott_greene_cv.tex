@@ -13,30 +13,39 @@
 \setlist[itemize,1]{label=, leftmargin=0ex, itemindent=0ex, itemsep=0.0ex, parsep=0.5ex}
 \newlist{compactlist}{itemize}{1}
 \setlist[compactlist]{ label=, leftmargin=1ex, itemindent=1ex, itemsep=0.0ex, parsep=0.5ex }
-\setlist[itemize]{leftmargin=.35in}
+\setlist[itemize]{leftmargin=.2in}
 \setlist{nolistsep}
 \titlespacing{\section}{0in}{\parskip}{-\parskip}
 
 \fancypagestyle{plain}{
     \fancyhf{} % clear header/footer
+    \renewcommand{\headrulewidth}{0pt}
     \fancyfoot[R]{modified \today}% setting footer/modification note
 }
 
 
 
 \begin{document}
+\rule{1\textwidth}{1pt}
+
+
 \thispagestyle{plain}
-\begin{minipage}[t]{1.00in}    \centering
+\begin{minipage}[t]{3.00in}    \centering
     Elliott Greene \\
     Ph.D. Student \\
     {\href{mailto:e.g@uky.edu}{e.g@uky.edu}}
 
 \end{minipage}
-    \begin{minipage}[t]{3.0in} \centering
-        Department of Biology \\
-        University of Kentucky \\
-        Lexington, KY 40506
-    \end{minipage}
+\begin{minipage}[t]{3.0in} \centering
+    Department of Biology \\
+    University of Kentucky \\
+    Lexington, KY 40506
+\end{minipage}
+
+\vspace{6pt}
+
+\rule{1\textwidth}{1pt}
+\vspace{6pt}
 
 
     \section*{Education}
